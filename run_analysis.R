@@ -1,4 +1,8 @@
-##
+## Creates 2 tidy datasets
+## 1. tidyDataMeanAndStd.txt - contains only the mean and std features for the subjects
+##          and activities
+## 2. averageTidyDataMeanAndStd.txt - contains the average for each of the features
+##          in data set 1 by activity and subject
 
 # Load Required Libraries
 library(plyr)
@@ -25,7 +29,6 @@ features <- read.table(".\\UCI HAR Dataset\\features.txt", stringsAsFactors = F)
 # Read in Activies data
 activities <- read.table(".\\UCI HAR Dataset\\activity_labels.txt")
 names(activities) <- c("activityID", "activityName")
-
         
 # Combine X data and assign feature names based on features data
 x <- rbind(xTrain, xTest)
