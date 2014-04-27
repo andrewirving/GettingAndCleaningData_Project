@@ -87,6 +87,8 @@ The subject_test.txt, y_test.txt, X_test.txt files were appended together latera
 ## Output data files
 ------------------------------------------
 
+All output files are tab delimited text files
+
 ### tidyDataMeanAndStd.txt
 
 There are 2 identify features in this data set
